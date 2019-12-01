@@ -16,41 +16,17 @@
 </template>
 
 <script>
-import { messageService } from '../service'
+import { messageService, subscriber as sub } from '../service'
+import { Observable, of } from 'rxjs'
+import { map } from 'rxjs/operators'
 
 export default {
   mounted: function () {
-    // const observable = new Observable((sub) => {
-    //   sub.next(1)
-    //   sub.next(2)
-    //   sub.next(3)
-    //   setTimeout(() => {
-    //     sub.next(4)
-    //     sub.complete()
-    //   }, 1000)
-    // })
-    // observable.subscribe({
-    //   next (x) {
-    //     console.log(x)
-    //   },
-    //   error (err) {
-    //     console.log(err)
-    //   },
-    //   complete (complete) {
-    //     console.log(complete)
-    //   }
-    // })
-    // console.log('Just after subscribe')
-    // const foo = new Observable(sub => {
-    //   console.log('Hello')
-    //   sub.next(42)
-    // })
-    // foo.subscribe(x => {
-    //   console.log(x)
-    // })
-    // foo.subscribe(y => {
-    //   console.log(y)
-    // })
+    const ob = new Observable()
+    ob.subscribe(sub)
+    console.log(!!ob)
+    sub.next('야시시알바라')
+    sub.complete()
   },
   data () {
     return {

@@ -1,1 +1,1 @@
-export { messageService } from './messageService'
+export { messageService, subscriber } from './messageService'

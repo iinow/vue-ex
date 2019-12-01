@@ -5,6 +5,8 @@ import App from './App'
 import router from './router'
 import { store } from './store'
 import { sync } from 'vuex-router-sync'
+import { Plugin } from 'vue-fragment'
+import VueMeta from 'vue-meta'
 
 const domain = document.domain
 const is = (domain.indexOf('toast.com') !== -1)
@@ -13,6 +15,10 @@ console.log(is, domain.indexOf('toast.com'))
 Vue.config.productionTip = false
 
 sync(store, router)
+Vue.use(Plugin)
+Vue.use(VueMeta, {
+  // refreshOnceOnNavigation: true
+})
 
 /* eslint-disable no-new */
 new Vue({

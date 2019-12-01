@@ -15,7 +15,11 @@
   "dependencies": {
     "axios": "^0.19.0",
     "rxjs": "^6.5.3",
+    "ts-node": "^8.5.4",
+    "typescript": "^3.7.2",
     "vue": "^2.5.2",
+    "vue-fragment": "^1.5.1",
+    "vue-meta": "^2.3.1",
     "vue-router": "^3.0.1",
     "vuex": "^3.1.2",
     "vuex-router-sync": "^5.0.0"

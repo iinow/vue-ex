@@ -13,6 +13,7 @@ export default {
       const query = this.$store.state.route.query
       const path = this.$store.state.route.path
       const body = this.$store.state.route
+      console.log(body)
       return {params, query, path}
     //   return JSON.stringify(body)
     }

@@ -6,10 +6,15 @@ import Vuex2 from '@/components/Vuex2'
 import Vuex3 from '@/components/Vuex3'
 import Rxjs from '@/components/Rxjs'
 import RouterVuex from '@/components/RouterVuex'
+import Fragment from '@/components/Fragment'
+import Meta from '@/components/Meta'
+import Arguments from '@/components/Arguments'
+// import { store } from '../store'
+// import { namepace as LoginNamespace } from '../store/login'
 
 Vue.use(Router)
 
-export default new Router({
+const router = new Router({
   routes: [
     {
       path: '/vuex1',
@@ -40,6 +45,40 @@ export default new Router({
       path: '/routerVuex',
       name: 'RouterVuex',
       component: RouterVuex
+    },
+    {
+      path: '/fragment',
+      name: 'Fragment',
+      component: Fragment
+    },
+    {
+      path: '/meta',
+      name: 'Meta',
+      component: Meta
+    },
+    {
+      path: '/argu',
+      name: 'argu',
+      component: Arguments
     }
   ]
 })
+
+// router.beforeEach((to, from, next) => {
+//   // fullPath 는 쿼리까지 포함한 path
+//   console.log('fullPath: ', to.fullPath)
+
+//   // path 는 쿼리 제외 path
+//   console.log('Path: ', to.path)
+//   const path = 'dd'
+//   path.match(/[/]$/)
+
+//   store.dispath(LoginNamespace, {country: 'kr'})
+
+//   next({
+//     path: to.path,
+//     query: to.query
+//   })
+// })
+
+export default router
