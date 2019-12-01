@@ -17,8 +17,8 @@
 
 <script>
 import { messageService, subscriber as sub } from '../service'
-import { Observable, of } from 'rxjs'
-import { map } from 'rxjs/operators'
+import { Observable } from 'rxjs'
+// import { map } from 'rxjs/operators'
 
 export default {
   mounted: function () {
