@@ -9,6 +9,7 @@ import RouterVuex from '@/components/RouterVuex'
 import Fragment from '@/components/Fragment'
 import Meta from '@/components/Meta'
 import Arguments from '@/components/Arguments'
+import Constant from '@/components/Constant'
 // import { store } from '../store'
 // import { namepace as LoginNamespace } from '../store/login'
 
@@ -60,6 +61,11 @@ const router = new Router({
       path: '/argu',
       name: 'argu',
       component: Arguments
+    },
+    {
+      path: '/cons',
+      name: 'Constant',
+      component: Constant
     }
   ]
 })

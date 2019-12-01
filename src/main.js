@@ -7,6 +7,7 @@ import { store } from './store'
 import { sync } from 'vuex-router-sync'
 import { Plugin } from 'vue-fragment'
 import VueMeta from 'vue-meta'
+import './global'
 
 const domain = document.domain
 const is = (domain.indexOf('toast.com') !== -1)
