@@ -10,6 +10,7 @@ import Fragment from '@/components/Fragment'
 import Meta from '@/components/Meta'
 import Arguments from '@/components/Arguments'
 import Constant from '@/components/Constant'
+import AxiosVue from '@/components/AxiosVue'
 // import { store } from '../store'
 // import { namepace as LoginNamespace } from '../store/login'
 
@@ -66,6 +67,11 @@ const router = new Router({
       path: '/cons',
       name: 'Constant',
       component: Constant
+    },
+    {
+      path: '/axios',
+      name: 'AxiosVue',
+      component: AxiosVue
     }
   ]
 })
