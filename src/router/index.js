@@ -11,6 +11,7 @@ import Meta from '@/components/Meta'
 import Arguments from '@/components/Arguments'
 import Constant from '@/components/Constant'
 import AxiosVue from '@/components/AxiosVue'
+import NotFoundExample1 from '@/components/NotFoundExample1'
 // import { store } from '../store'
 // import { namepace as LoginNamespace } from '../store/login'
 
@@ -72,6 +73,11 @@ const router = new Router({
       path: '/axios',
       name: 'AxiosVue',
       component: AxiosVue
+    },
+    {
+      path: '/notfound',
+      name: 'NotFoundEx1',
+      component: NotFoundExample1
     }
   ]
 })
