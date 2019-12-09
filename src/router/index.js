@@ -12,6 +12,7 @@ import Arguments from '@/components/Arguments'
 import Constant from '@/components/Constant'
 import AxiosVue from '@/components/AxiosVue'
 import NotFoundExample1 from '@/components/NotFoundExample1'
+import Nav from '@/components/Nav'
 // import { store } from '../store'
 // import { namepace as LoginNamespace } from '../store/login'
 
@@ -78,6 +79,11 @@ const router = new Router({
       path: '/notfound',
       name: 'NotFoundEx1',
       component: NotFoundExample1
+    },
+    {
+      path: '/nav1',
+      name: 'Nav1',
+      component: Nav
     }
   ]
 })
